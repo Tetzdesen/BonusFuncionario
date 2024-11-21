@@ -2,7 +2,11 @@ com\br\sistemabonusfuncionario\Principal.class
 com\br\sistemabonusfuncionario\Funcionario.class
 com\br\sistemabonusfuncionario\CalculoBonusPorDistancia.class
 com\br\sistemabonusfuncionario\CalculadoraBonusService.class
+com\br\sistemabonusfuncionario\CalculoBonusPorTempoDeEmpresa.class
 com\br\sistemabonusfuncionario\Bonus.class
+com\br\sistemabonusfuncionario\DesempenhoMensal.class
+com\br\sistemabonusfuncionario\CalculoBonusPorDesempenhoTempo.class
+com\br\sistemabonusfuncionario\CalculoBonusPorCargo.class
 com\br\sistemabonusfuncionario\CalculoBonusPorFaltas.class
 com\br\sistemabonusfuncionario\CalculoBonusPorDependentes.class
 com\br\sistemabonusfuncionario\IModuloCalculoBonus.class

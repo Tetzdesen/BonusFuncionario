@@ -23,7 +23,7 @@ public class CalculoBonusPorDistancia implements IModuloCalculoBonus {
             bonus = 170;
         }
         
-        funcionario.adicionarBonus(new Bonus("Bonus por Distancia", bonus));
+        if(bonus > 0) funcionario.adicionarBonus(new Bonus("Bonus por Distancia", bonus));
         
     }
     

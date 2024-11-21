@@ -22,7 +22,7 @@ public class CalculoBonusPorDependentes implements IModuloCalculoBonus {
             bonus = salarioBase * 0.03;
         }
         
-        funcionario.adicionarBonus(new Bonus("Bonus por Dependentes", bonus));
+        if(bonus > 0) funcionario.adicionarBonus(new Bonus("Bonus por Dependentes", bonus));
     }
     
 }

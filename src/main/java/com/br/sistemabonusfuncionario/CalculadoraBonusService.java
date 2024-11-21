@@ -19,6 +19,9 @@ public class CalculadoraBonusService {
         modulosCalculoBonus.add(new CalculoBonusPorDependentes());
         modulosCalculoBonus.add(new CalculoBonusPorDistancia());
         modulosCalculoBonus.add(new CalculoBonusPorFaltas());
+        modulosCalculoBonus.add(new CalculoBonusPorTempoDeEmpresa());
+        modulosCalculoBonus.add(new CalculoBonusPorCargo());
+        modulosCalculoBonus.add(new CalculoBonusPorDesempenhoTempo());
     }
     
     public void processar(Funcionario funcionario){

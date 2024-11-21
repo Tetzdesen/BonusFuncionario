@@ -4,6 +4,7 @@
  */
 package com.br.sistemabonusfuncionario;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,9 +20,11 @@ public class Funcionario {
     private int numeroFaltas;
     private double distanciaTrabalho;
     private int numeroDependentes;
+    private LocalDate dataContratacao;
     private List<Bonus> bonusRecebidos;
+    private final List<DesempenhoMensal> desempenhoMensais;
 
-    public Funcionario(String nome, double salarioBase, int idade, String cargo, int numeroFaltas, double distanciaTrabalho, int numeroDependentes) {
+    public Funcionario(String nome, double salarioBase, int idade, String cargo, int numeroFaltas, double distanciaTrabalho, int numeroDependentes, LocalDate dataContratacao) {
         this.nome = nome;
         this.salarioBase = salarioBase;
         this.idade = idade;
@@ -29,13 +32,19 @@ public class Funcionario {
         this.numeroFaltas = numeroFaltas;
         this.distanciaTrabalho = distanciaTrabalho;
         this.numeroDependentes = numeroDependentes;
+        this.dataContratacao = dataContratacao;
         this.bonusRecebidos = new ArrayList<>();
+        this.desempenhoMensais = new ArrayList<>();
     }
 
     public String getNome() {
         return nome;
     }
 
+    public List<DesempenhoMensal> getDesempenhoMensais() {
+        return desempenhoMensais;
+    }
+    
     public void setNome(String nome) {
         this.nome = nome;
     }
@@ -54,6 +63,14 @@ public class Funcionario {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+
+    public LocalDate getDataContratacao() {
+        return dataContratacao;
+    }
+
+    public void setDataContratacao(LocalDate dataContratacao) {
+        this.dataContratacao = dataContratacao;
     }
 
     public String getCargo() {
@@ -111,6 +128,6 @@ public class Funcionario {
     @Override
     public String toString() {
         return "Funcionario{" + "nome=" + nome + ", salarioBase=" + salarioBase + ", idade=" + idade + ", cargo=" + cargo + ", numeroFaltas=" + numeroFaltas + ", distanciaTrabalho=" + distanciaTrabalho + ", numeroDependentes=" + numeroDependentes + ", bonusRecebidos=" + bonusRecebidos + '}';
-    }
+    } 
     
 }

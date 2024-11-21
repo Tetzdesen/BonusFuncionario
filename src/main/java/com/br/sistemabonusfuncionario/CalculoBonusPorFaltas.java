@@ -21,8 +21,7 @@ public class CalculoBonusPorFaltas implements IModuloCalculoBonus {
        } else if(faltas >= 1 && faltas <= 3){
            bonus = salarioBase * 0.025;
        }
-       
-       funcionario.adicionarBonus(new Bonus("Bonus por Falta", bonus));
+       if(bonus > 0) funcionario.adicionarBonus(new Bonus("Bonus por Falta", bonus));
     }
     
 }
