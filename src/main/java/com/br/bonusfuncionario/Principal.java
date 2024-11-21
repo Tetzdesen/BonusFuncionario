@@ -2,8 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.br.sistemabonusfuncionario;
+package com.br.bonusfuncionario;
 
+import com.br.models.Funcionario;
+import com.br.services.CalculadoraBonusService;
 import java.time.LocalDate;
 
 /**

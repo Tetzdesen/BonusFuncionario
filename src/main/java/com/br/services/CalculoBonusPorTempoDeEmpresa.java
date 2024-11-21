@@ -2,8 +2,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.br.sistemabonusfuncionario;
+package com.br.services;
 
+import com.br.models.Bonus;
+import com.br.models.Funcionario;
+import com.br.interfaces.IModuloCalculoBonus;
 import java.time.LocalDate;
 import java.time.Period;
 
